@@ -177,9 +177,32 @@ nav ul li a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.project-link {
+.project-description-button {
+    background: var(--secondary-color);
     color: white;
-    text-decoration: underline;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.project-description-button:hover {
+    background: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.project-description {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: white;
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+.project-description.show {
+    display: block;
 }
 
 /* Formulaire de contact */
