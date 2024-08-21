@@ -13,18 +13,18 @@
             <h1>Bonjour, je suis [Votre Nom]</h1>
         </div>
     </header>
-    <main>
+    <main id="main-content">
         <section id="about">
             <h2>À propos</h2>
             <p>Développeur passionné avec une expertise en développement web et mobile. Toujours à la recherche de nouveaux défis et opportunités pour créer des expériences utilisateur exceptionnelles.</p>
         </section>
         <section id="projects">
             <h2>Projets</h2>
-            <div class="project">
+            <div class="project" data-project="1">
                 <h3>Projet 1</h3>
                 <p>Description du projet 1. Technologies utilisées: HTML, CSS, JavaScript.</p>
             </div>
-            <div class="project">
+            <div class="project" data-project="2">
                 <h3>Projet 2</h3>
                 <p>Description du projet 2. Technologies utilisées: React, Node.js.</p>
             </div>
@@ -33,6 +33,13 @@
             <h2>Contact</h2>
             <p>Pour toute demande, n'hésitez pas à me contacter à l'adresse suivante : <a href="mailto:contact@example.com">contact@example.com</a></p>
         </section>
+        <div id="project-details" class="hidden">
+            <button id="back-button">Retour</button>
+            <div id="project-content">
+                <img id="project-image" src="" alt="Image du projet">
+                <p id="project-description"></p>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 [Votre Nom]. Tous droits réservés.</p>
